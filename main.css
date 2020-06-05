@@ -222,7 +222,7 @@ html {
     justify-content: space-around;
   }
   .nav-container {
-    background: transparent;
+    background: var(--clr-primary-1);
     border-bottom: none;
     flex: 0 0 50%;
   }
@@ -234,6 +234,7 @@ html {
     justify-content: center;
     flex-wrap: wrap;
     align-self: center;
+    background: var(--clr-primary-1);
   }
   .nav-links li {
     flex: 1 0 auto;
@@ -401,7 +402,7 @@ nav {
 
 /*services*/
 
-#services {
+#service {
   min-height: 100vh;
   background: linear-gradient(rgba(9, 5, 20, 0.507), rgba(7, 3, 17, 0.582)),
     url(images/carrotcucumber.jpeg);
