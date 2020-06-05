@@ -291,14 +291,18 @@ nav {
 }
 
 .banner-text {
-  font-size: 50px;
+  font-size: 40px;
   text-transform: uppercase;
   color: var(--clr-primary-7);
+  text-align: center;
+}
+.banner-title {
+  margin: 0 auto;
 }
 
 .banner-title h3 {
   font-size: 25px;
-  padding: 0 2rem;
+
   color: var(--clr-primary-7);
   text-align: center;
   font-style: italic;
@@ -320,10 +324,12 @@ nav {
 .about-center {
   display: grid;
   gap: 1rem 2rem;
+  width: 90%;
+  margin: 0 auto;
 }
 .about-image {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   overflow: hidden;
   object-fit: cover;
   object-position: center;
@@ -335,13 +341,16 @@ nav {
   height: 100%;
   width: 100%;
 }
-.about-center .btn {
-  margin: 2rem auto;
-}
 .about-text {
-  width: 80%;
   align-content: center;
   margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.about-text .btn {
+  margin: 1rem auto;
 }
 .about-text h1 {
   text-align: center;
@@ -350,9 +359,6 @@ nav {
   font-style: italic;
   text-transform: uppercase;
   color: var(--clr-primary-1);
-}
-.about-text .btn {
-  margin-left: 35%;
 }
 .about-text p {
   color: var(--clr-primary-1);
@@ -367,8 +373,15 @@ nav {
   .about-text {
     align-self: center;
   }
-  .about-text .btn {
-    margin-left: 35%;
+  .about-image {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid var(--clr-primary-7);
+    margin: 2rem auto;
+    box-shadow: var(--dark-shadow);
   }
 }
 
@@ -409,7 +422,8 @@ nav {
 .service-item {
   overflow: hidden;
   position: relative;
-  padding: 100px;
+  padding: 50px;
+  height: 200px;
 }
 
 .service-item .fa {
@@ -479,6 +493,9 @@ nav {
   background: #191716;
   border-color: #191716;
   color: #e6af2e;
+}
+.banner-text p {
+  margin-left: -50px;
 }
 
 .service-item:hover .front-text {
